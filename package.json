@@ -9,10 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@amcharts/amcharts5": "^5.13.3",
+    "@amcharts/amcharts5-fonts": "^5.0.1",
+    "@amcharts/amcharts5-geodata": "^5.1.5",
+    "amcharts": "^3.14.5",
     "contentful": "^11.7.7",
+    "leaflet": "^1.9.4",
     "next": "15.4.1",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-kakao-maps-sdk": "^1.2.0",
+    "react-leaflet": "^5.0.0",
+    "tailwind": "^4.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

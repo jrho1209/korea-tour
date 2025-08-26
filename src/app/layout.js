@@ -1,5 +1,8 @@
 import './globals.css';
 import Script from 'next/script';
+import Navigation from './components/Navigation';
+import Head from "next/head";
+
 
 export const metadata = {
   title: 'Korea Tour',
@@ -9,12 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <head />
-      <body>
-        <Script
-          src={`https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NEXT_PUBLIC_NAVER_MAP_API_KEY}`}
-          strategy="beforeInteractive"
+      <Head>
+      <Script
+          scr="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a65a8036af7ad6fb68519672be9c3795&libraries=services,clusterer&autoload=false"
+          strategy='beforeInteractive'
         />
+      </Head>
+      <body>
+      <Navigation />
         {children}
       </body>
     </html>
